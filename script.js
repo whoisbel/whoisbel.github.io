@@ -1,4 +1,4 @@
-const testMode = true;
+const testMode = false;
 
 document.addEventListener("DOMContentLoaded", () => {
     const startScreen = document.getElementById("start-screen");
