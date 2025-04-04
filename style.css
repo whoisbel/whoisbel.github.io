@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fde7dc;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#container > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#container > div.active {
+    display: flex;
+    opacity: 1;
+}
+
+#container > div.fade-out {
+    opacity: 0;
+}
+
+#container > div.fade-in {
+    opacity: 1;
+}
+
+#countdown-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fde7dc;
+    text-align: center;
+}
+
+#timer {
+    font-size: 48px;
+    margin-top: 20px;
+    color: #d63384;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #ff8fab;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.cursive-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #d63384;
+}
+
+.favorite-moments {
+    text-align: center;
+    padding: 2rem;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collage img {
+    width: 100%;
+    height: 200px; /* Set the height to a fixed value for uniformity */
+    object-fit: cover; /* Ensures all images are cropped to maintain aspect ratio */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.collage img:hover {
+    transform: scale(1.05);
+}
+
+.collage img:nth-child(4) {
+    object-position: center bottom;
+}
+
+/* Birthday Message Styling */
+.birthday-message {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.birthday-message h1 {
+    font-size: 40px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.message-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: 18px; /* Adjusted for a more readable font size */
+    line-height: 1.8;
+    text-align: justify;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    max-width: 750px;
+    margin-top: 20px; /* Adds spacing between the heading and the message */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message-container p {
+    margin-bottom: 20px; /* Space between paragraphs */
+    color: #666;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+.birthday-message .message-container p::before {
+    content: '💬 ';
+    font-size: 24px;
+    color: #ff6f61;
+}
+
+.birthday-message .message-container p::after {
+    content: ' ✨';
+    font-size: 24px;
+    color: #ff6f61;
+}
+
+#start-screen {
+    display: flex;
+    flex-direction: column; /* Keep it in a column layout */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it perfectly */
+    background-color: #fde7dc;
+    text-align: center;
+    width: 100%;
+}
+
+#start-screen h1 {
+    font-size: 36px;
+    color: #d63384;
+    margin-bottom: 20px; /* Space between h1 and button */
+}
+
+#start-screen button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #ff8fab;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-screen button:hover {
+    background-color: #d63384;
+}
+
