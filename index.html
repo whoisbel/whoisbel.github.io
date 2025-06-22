@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bel's Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Awards & Certifications</a></li>
+      </ul>
+      <button id="themeToggle" title="Toggle Theme">🌓</button>
+    </nav>
+
+    <main>
+      <section id="intro" class="intro">
+        <h1 class="title">Hi, I'm Bel</h1>
+        <p class="tagline">
+          🧠 Code. Coffee. <span class="chaos">Chaos</span>. Always in that
+          order.
+        </p>
+        <a
+          href="./public/resume.pdf"
+          class="resume-button"
+          download
+          target="_blank"
+          >📄 Download Resume</a
+        >
+      </section>
+      <section id="projects" class="section">
+        <h2>📁 Projects</h2>
+        <div class="projects">
+          <div class="project-item">
+            <img src="./public/thesis.png" alt="Thesis Software Screenshot" />
+            <div class="project-info">
+              <h3>🖥️ Thesis software</h3>
+              <p>
+                Designed and implemented a custom multi-layer LSTM model in
+                PyTorch, replacing traditional tanh activations with ELU in the
+                cell and hidden states to explore effects on learning dynamics
+                and model expressivity. Developed a CustomLSTMCell class that
+                supports flexible activation configurations and integrated it
+                into a 3-layer architecture with dropout regularization. The
+                model was used in a full-stack application built with FastAPI
+                (backend) and Next.js (frontend) as part of a thesis project.
+                Co-authored the research paper and contributed to both
+                experimentation and deployment.
+              </p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="./public/M&S.png" alt="Thesis Software Screenshot" />
+            <div class="project-info">
+              <h3>🖥️ M&S Inventory Management</h3>
+              <p>
+                Contributed mainly to frontend development and project
+                documentation in a 3-member team building a full-stack inventory
+                management system for a pomelo farm in Sarangani, Philippines.
+                The application was developed using Next.js for both frontend
+                and backend logic, with MySQL serving as the relational
+                database. Implemented core UI components, optimized UX flows,
+                and wrote technical documentation to support deployment and user
+                onboarding.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="awards" class="section">
+        <h2>🏆 Awards & Certifications</h2>
+        <div id="award">
+          <h3>🏅 Hack4Gov: Region 11 Qualifiers</h3>
+          <div class="award-item">
+            <img src="./public/hack4gov.jpg" alt="" />
+            <p>
+              One of the highlights of 2023. Our team of four placed 2nd in the
+              Region 11 qualifiers of DICT's national cybersecurity competition,
+              Hack4Gov. It was a challenging event that tested our team’s skills
+              and coordination. I'm proud of what we accomplished together.
+            </p>
+          </div>
+          <h3>🏅 CCE Skills Clinic</h3>
+          <div class="award-item">
+            <img src="./public/mentor.png" alt="" />
+            <p>
+              Recognized as a mentor for the CCE Skills Clinic, where I helped
+              fellow students. It was a great experience sharing what I knew and
+              learning along the way. And yes, the certificate got wet.
+            </p>
+          </div>
+          <h3>🏅 IT Specialist - Databases</h3>
+          <div class="award-item">
+            <img
+              src="./public/databases.png"
+              alt="IT Specialist - Databases Certificate"
+            />
+            <p>
+              Earned the IT Specialist certification in HTML & CSS from
+              Certiport. Verified on
+              <a
+                href="https://www.credly.com/badges/9e4f4338-178f-4ff5-b234-a9c4f38e4154"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Credly</a
+              >.
+            </p>
+          </div>
+          <h3>🏅 IT Specialist - HTML & CSS</h3>
+          <div class="award-item">
+            <img src="./public/html-css.png" alt="" />
+            <p>
+              Certified by Certiport in HTML & CSS fundamentals. Verification
+              available on
+              <a
+                href="https://www.credly.com/badges/f391ae6d-77b0-4760-9782-84e5a27b1097"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Credly</a
+              >.
+            </p>
+          </div>
+          <h3>🏅 IT Specialist - Network Security</h3>
+          <div class="award-item">
+            <img src="./public/network-security.png" alt="" />
+            <p>
+              Certified by Certiport in database fundamentals. Verification
+              available on
+              <a
+                href="https://www.credly.com/badges/467c25a2-6f85-4c57-8a2f-b9ebdcfc2c08"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Credly</a
+              >.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <button id="backToTop" title="Back to Top">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>
